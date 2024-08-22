@@ -5,7 +5,7 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 import { ReloadInstructions } from 'react-native/Libraries/NewAppScreen';
 function App() {
-
+  const [username,setUserName]=useState(null)
     const [user,setUser]=useState(null)
     useEffect(()=>{
       
